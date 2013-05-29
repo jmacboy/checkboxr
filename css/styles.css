@@ -1,0 +1,26 @@
+
+#principal
+{
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+
+}
+#obedece
+{
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+}
+#cambio0
+{
+    background-image: url('../imagen/0.png')  no-repeat;
+}
+#cambio1
+{
+    background-image: url('../imagen/1.png')  no-repeat;
+}
+#cambio2
+{
+    background-image: url('../imagen/2.png')  no-repeat;
+}
