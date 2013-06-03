@@ -17,30 +17,36 @@
 <form action= '' runat="server">	
 	<div>
     <div><span><strong> Opciones-check </strong></span></div>
-     
-		<div><input type="checkbox" id="primero"/>
-		<label >Agrupar</label></div>
-		
+     <!--create  input-->
+		<div>
+		<input type="checkbox" id="maestro"/>
+		<label >Agrupar</label>
+		</div>
+		<div>
+		 		
 		<input type="checkbox"/>
-		<label >Apellido</label>
+		<label >Opcion 1</label>
 		
 		<input type="checkbox" />
-		<label >Direccion</label>
+		<label >Opcion 2</label>
 		
 		<input type="checkbox" />
-		<label >Telefono</label>
+		<label >Opcion 3</label>
 		
 		<input type="checkbox"/>
-		<label >Edad</label>
+		<label >Opcion 4</label>
 
 		<input type="checkbox" />
-		<label >CI</label>
+		<label >Opcion 5</label>
+		</div>
 	</div>
 </form>
 <script type="text/javascript">
     $(document).ready(function () {
         // Run the script on DOM ready:
-        $('input').agrupar({});
+        //calls the functions embellecer y agrupar of plugin checkboxr
+        $('input').agrupar();
+        $('input').embellecer();
     });
 	</script>	
 </body>
