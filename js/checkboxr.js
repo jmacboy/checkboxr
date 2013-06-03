@@ -5,9 +5,9 @@ jQuery(document).ready(function () {
                 //cambia estado en caso de que este en otro falso
                 $("INPUT[type='checkbox']").prop('checked', true);
             }
-    
-    };
-
-    jQuery.fn.embellecer = function (opcions) {
-        
+             else {
+                   $("INPUT[type='checkbox']").prop('checked',false);
+                 }
+           };
+    return $(this);
 });
