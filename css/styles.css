@@ -1,0 +1,9 @@
+body {
+    font-size: 80%;
+}
+span {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: .2em 5px;
+}
+
