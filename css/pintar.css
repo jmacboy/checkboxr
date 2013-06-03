@@ -1,0 +1,15 @@
+.inactivo {
+background:url('./images/checkboxInactivo.gif') no-repeat left top;
+width:17px;
+height:17px;
+cursor:pointer;
+margin-left:0.8em;
+}
+
+.activo{
+background:url('./images/checkboxActivo.gif') no-repeat left top;
+width:17px;
+height:17px;
+cursor:pointer;
+margin-left:0.8em;
+}
