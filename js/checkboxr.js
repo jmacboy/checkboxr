@@ -11,6 +11,16 @@ jQuery(document).ready(function () {
              else {
                    $("INPUT[type='checkbox']").prop('checked',false);
                  }
-           };
-    return $(this);
+              });
+                return $(this);
+    }
+    jQuery.fn.embellecer = function (opcions) {
+        $('#transformado').css('display', 'none');
+        $('#transformado').parent().prepend('<div class="inactivo"></div>');
+        $('.inactivo').click(function () {
+            $('#transformado').parent().prepend('<div class="activo"></div>')
+            $('.inactivo').remove();
+        });
+        
+    }
 });
