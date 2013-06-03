@@ -1,39 +1,47 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="_Default" %>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>CheckBox</title>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title></title>
-    <link href="css/Style.css" rel="stylesheet" type="text/css" />
-    <script src="Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<!-- CSS and scripts: -->	
+	<link rel="stylesheet" type="text/css" href="hoja.css" />
+	<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="checkboxr.js" type="text/javascript"></script>
+	
 </head>
+
 <body>
-    
-    <form id="form1" runat="server">
+<!-- /Header -->
+<form action= '' runat="server">	
+	<div>
+    <div><span><strong> Opciones-check </strong></span></div>
+     
+		<div><input type="checkbox" id="primero"/>
+		<label >Agrupar</label></div>
+		
+		<input type="checkbox"/>
+		<label >Apellido</label>
+		
+		<input type="checkbox" />
+		<label >Direccion</label>
+		
+		<input type="checkbox" />
+		<label >Telefono</label>
+		
+		<input type="checkbox"/>
+		<label >Edad</label>
 
-        <div> 
-            <img src="./imagen/0.png" id="imagen_src"/>
-        </div>
-
-    </form>
-    <script type="text/javascript">
-        var val = false;
-        $(document).ready(function () {
-            $("#imagen_src").on('click', function () {
-                if (val == false) {
-                    $(this).removeClass("#cambio0");
-                    $(this).attr('src', './imagen/1.png');
-                    val = true;
-                } else {
-                    $(this).removeClass("#cambio1");
-                    $(this).attr('src', './imagen/0.png');
-                    val = false;
-                }
-            });
-
-        });
-    
-    </script>
+		<input type="checkbox" />
+		<label >CI</label>
+	</div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Run the script on DOM ready:
+        $('input').agrupar({});
+    });
+	</script>	
 </body>
 </html>
